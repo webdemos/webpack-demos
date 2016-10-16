@@ -7,18 +7,26 @@ These demos are purposely written in a simple and clear style. You will find no 
 First, install [Webpack](https://www.npmjs.com/package/webpack) and [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) globally.
 
 ```bash
+<<<<<<< HEAD
 $ npm i -g webpack@1.x webpack-dev-server@1.x
+=======
+$ npm i -g webpack webpack-dev-server
+>>>>>>> init
 ```
 
 Then, clone the repo and install the dependencies.
 
 ```bash
+<<<<<<< HEAD
 # Linux & Mac
 $ git clone git@github.com:ruanyf/webpack-demos.git
 
 # Windows
 $ git clone https://github.com/ruanyf/webpack-demos.git
 :
+=======
+$ git clone git@github.com:ruanyf/webpack-demos.git
+>>>>>>> init
 $ cd webpack-demos
 $ npm install
 ```
@@ -234,7 +242,11 @@ module: {
     {
       test: /\.jsx?$/,
       exclude: /node_modules/,
+<<<<<<< HEAD
       loader: 'babel-loader',
+=======
+      loader: 'babel',
+>>>>>>> init
       query: {
         presets: ['es2015', 'react']
       }
@@ -347,7 +359,11 @@ module.exports = {
 };
 ```
 
+<<<<<<< HEAD
 [url-loader](https://www.npmjs.com/package/url-loader) transforms image files. If the image size is smaller than 8192 bytes, it will be transformed into Data URL; otherwise, it will be transformed into normal URL. As you see, question mark(?) is used to pass parameters into loaders.
+=======
+[url-loader](https://www.npmjs.com/package/url-loader) transforms image files. If the image size is smaller than 8192 bytes, it will be transformed into Data URL; otherwise, it will be transformed into normal URL. As you see, question mark(?) is be used to pass parameters into loaders.
+>>>>>>> init
 
 After launching the server, `small.png` and `big.png` will have the following URLs.
 
@@ -931,7 +947,11 @@ index.js
 
 ```javascript
 import React from 'react';
+<<<<<<< HEAD
 import ReactDOM from 'react-dom';
+=======
+import ReactDOM = require('react-dom');
+>>>>>>> init
 import App from './App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
