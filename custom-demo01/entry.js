@@ -7,5 +7,5 @@ document.write(require('./content.js'));
 
 if (true) {
     debugger
-    console.log('debug');
+    console.log('debugger');
 }
