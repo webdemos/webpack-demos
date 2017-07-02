@@ -35,6 +35,8 @@
   "scripts": {
     "dev": "webpack-dev-server --devtool eval --progress --colors",
     "deploy": "NODE_ENV=production webpack -p",
+    "custom-demo04-dll": "cd custom-demo04/dll-user/dll && webpack",
+    "custom-demo04-dll-user": "cd custom-demo04/dll-user && webpack-dev-server",
     "demo09": "cd demo09 && set DEBUG=true && webpack-dev-server",
     "demo12": "cd demo12 && webpack",
     "demo13": "cd demo13 && webpack",
