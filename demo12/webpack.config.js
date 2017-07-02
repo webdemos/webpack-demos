@@ -1,4 +1,7 @@
-var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
+// var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
+
+const webpack = require('webpack');
+
 module.exports = {
   entry: {
     bundle1: './main1.jsx',
@@ -13,6 +16,15 @@ module.exports = {
     ]
   },
   plugins: [
-    new CommonsChunkPlugin('init.js')
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "commons",
+      children: true,
+      async: true
+    }),
+    // new CommonsChunkPlugin({
+    //   name: 'init',
+    //   filename: "init.js",
+    //   minChunks: 2
+    // })
   ]
-}
+};
