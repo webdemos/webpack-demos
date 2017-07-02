@@ -5,4 +5,4 @@ console.log(require("beta/beta"));
 console.log(require("beta/b"));
 console.log(require("beta/c"));
 
-// console.log(require("module"));
+console.log(require("module"));

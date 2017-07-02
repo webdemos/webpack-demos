@@ -6,7 +6,7 @@ module.exports = {
 		extensions: [".js", ".jsx"]
 	},
 	entry: {
-		alpha: ["./alpha", "./a"],
+		alpha: ["./alpha", "./a", "module"],
 		beta: ["./beta", "./b", "./c"]
 	},
 	output: {
