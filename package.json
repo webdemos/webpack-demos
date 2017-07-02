@@ -34,7 +34,11 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --devtool eval --progress --colors",
-    "deploy": "NODE_ENV=production webpack -p"
+    "deploy": "NODE_ENV=production webpack -p",
+    "demo09": "cd demo09 && set DEBUG=true && webpack-dev-server",
+    "demo12": "cd demo12 && webpack",
+    "demo13": "cd demo13 && webpack",
+    "demo15": "cd demo15 && webpack-dev-server"
   },
   "repository": "ruanyf/webpack-demos"
 }
