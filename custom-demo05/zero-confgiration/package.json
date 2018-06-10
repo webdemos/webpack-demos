@@ -1,0 +1,17 @@
+{
+  "name": "zero-confgiration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.0.0-beta.3",
+    "webpack-cli": "^3.0.3"
+  }
+}
